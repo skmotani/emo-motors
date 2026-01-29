@@ -21,14 +21,13 @@ export default function ProductCard({ title, description, href, features, badge,
       
       {/* Product Image */}
       {image ? (
-        <div className="relative h-40 -mx-8 -mt-8 mb-6 overflow-hidden">
+        <div className="relative h-48 -mx-8 -mt-8 mb-6 overflow-hidden bg-gray-100">
           <Image
             src={image}
             alt={title}
             fill
-            className="object-cover group-hover:scale-105 transition-transform duration-300"
+            className="object-contain p-4 group-hover:scale-105 transition-transform duration-300"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-white/80 to-transparent" />
         </div>
       ) : (
         <div className="w-16 h-16 bg-gradient-to-br from-dark to-gray-600 rounded-lg flex items-center justify-center mb-4">
