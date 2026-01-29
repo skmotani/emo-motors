@@ -35,8 +35,8 @@ export default function Home() {
             </span>
             
             <h1 className="text-white mb-6 animate-fade-in-up animate-delay-1">
-              <span className="text-accent">PRECISION</span> Motors for<br />
-              Textile Excellence
+              <span className="text-accent">Special</span> Motors for<br />
+              Textile Machines
             </h1>
             
             <p className="text-xl text-gray-300 mb-6 animate-fade-in-up animate-delay-2">
