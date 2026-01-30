@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useState } from "react";
 
 const navItems = [
@@ -36,14 +37,14 @@ export default function Header() {
     <header className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-border">
       <nav className="container flex items-center justify-between h-20">
         {/* Logo */}
-        <Link href="/" className="flex items-center gap-3">
-          <div className="w-10 h-10 bg-accent rounded flex items-center justify-center">
-            <span className="text-white font-bold text-lg">E</span>
-          </div>
-          <div>
-            <span className="text-xl font-bold text-dark">EMO</span>
-            <span className="hidden sm:inline text-sm text-muted ml-2">by Meera Industries</span>
-          </div>
+        <Link href="/" className="relative block h-12 w-48">
+          <Image 
+            src="/images/emo-logo-red.png" 
+            alt="EMO Motors" 
+            fill 
+            className="object-contain object-left"
+            priority
+          />
         </Link>
 
         {/* Desktop Navigation */}

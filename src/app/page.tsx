@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import EngineerSummary from "@/components/EngineerSummary";
 import ProductCard from "@/components/ProductCard";
 import PremiumProductCard from "@/components/PremiumProductCard";
@@ -34,6 +35,17 @@ export default function Home() {
             <span className="section-label text-gray-300 mb-4 block animate-fade-in-up">
               Trusted by 500+ Textile Mills Across India
             </span>
+
+             {/* Hero Logo */}
+            <div className="relative h-24 w-80 mb-6 animate-fade-in-up animate-delay-1">
+              <Image 
+                src="/images/emo-logo-red.png" 
+                alt="EMO Motors" 
+                fill 
+                className="object-contain object-left"
+                priority
+              />
+            </div>
             
             <h1 className="text-white mb-6 animate-fade-in-up animate-delay-1">
               <span className="text-accent">Special</span> Motors for<br />
