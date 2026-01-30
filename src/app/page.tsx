@@ -177,7 +177,7 @@ export default function Home() {
         <div className="container">
           <span className="section-label block mb-4">Product Categories</span>
           <h2 className="mb-12">
-            <span className="text-accent">Premium</span> Motor Solutions
+            <span className="text-accent">Our Premium</span> Motor Solutions
           </h2>
           
           <div className="grid-3">
