@@ -1,6 +1,7 @@
 import Link from "next/link";
 import EngineerSummary from "@/components/EngineerSummary";
 import ProductCard from "@/components/ProductCard";
+import PremiumProductCard from "@/components/PremiumProductCard";
 
 export default function Home() {
   return (
@@ -180,7 +181,7 @@ export default function Home() {
           </h2>
           
           <div className="grid-3">
-            <ProductCard
+            <PremiumProductCard
               title="IE3 & IE4 Premium Motors"
               description="Super premium efficiency motors meeting international standards for energy optimization."
               href="/products/ie3-ie4-motors"
@@ -188,14 +189,14 @@ export default function Home() {
               image="/images/ie3-ie4-motor.png"
               features={["IE3/IE4 Efficiency", "Class F/H Insulation", "S1 Duty Cycle"]}
             />
-            <ProductCard
+            <PremiumProductCard
               title="VFD-Compatible Motors"
               description="Specially designed for seamless integration with variable frequency drives."
               href="/products/vfd-compatible"
               image="/images/vfd-motor.png"
               features={["Inverter-Ready", "Low Vibration", "Extended Bearing Life"]}
             />
-            <ProductCard
+            <PremiumProductCard
               title="Textile Brake Motors"
               description="Precision brake motors for applications requiring instant stopping and positioning."
               href="/products/brake-motors"
